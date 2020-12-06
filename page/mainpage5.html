@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Gambar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market">
+    <script type="text/javascript" src="../function.js"></script>
+</head>
+<div style="display: none;" id="end" class="end">
+    <div class="cd-b">
+        <div class="pop">
+            <h1 id="hb" style="color: gold; display: none; font-size: 50px;">Benar</h1>
+            <h1 id="hs" style="color: red; display: none; font-size: 50px;">Salah</h1>
+            <h1 id="ula" style="color: red; display: none; font-size: 50px;">Gagal</h1>
+            <h1 id="rl" style="display: none; color: blue; font-size: 50px;">Ingin Keluar?</h1>
+            <a href="mainpage6.html"><button id="la" class="lanjut" style="display: none;"><h1>Lanjut</h1></button></a>
+            <button id="ul" class="lanjut" style="display: none;" onclick="ulang()"><h1>Kembali</h1></button>
+            <a href="../index.html"><button id="res" class="lanjut" style="display: none;"><h1>Keluar</h1></button></a>
+        </div>
+    </div>
+</div>
+<body onload="load()">
+    <div class="wr-body">
+        <div class="container-gi">
+            <div class="left-cn">
+                <div id="ny" class="nyawa">
+                    <img style="width: 40px; height: 40px; float: left;" src="../media/heart.png" alt="hati" id="hati">
+                    <h4 style="color: red; font-size: 30px; float: left; margin-left: 20px; " class="ht" id="ht"></h4>
+                </div>
+                <div id="ny" class="nyawa">nyawa</div>
+                <img class="img-vk" src="../media/pahlawan/ahmad-yani.jpg" alt="">
+            </div>    
+            <div class="right-cn">
+            <div class="cn-r">
+                <div class="close">
+                    <a href="../index.html"><button class="keluar"><h1>Keluar</h1></button></a>
+                </div>
+                <div class="info">
+                    <h1>Petunjuk</h1>
+                    <h4 style="margin-top: 10px;">
+                        1. Ia merupakan pahlawan Indonesia yang memiliki peran penting dalam perjuangan bangsa.
+                    </h4>
+                    <h4 style="margin-top: 10px;">
+                        2. Ia merupakan Panglima Staf Komando Angkatan Darat (KSAD).
+                    </h4>
+                    <h4 style="margin-top: 10px;">
+                        3. Ia dan pasukannya berhasil menumpas Gerakan DI/TII di Daerah sekitar Brebes dan Pekalongan.
+                    </h4>
+                    <h4 style="margin-top: 10px;">
+                        4. Ia menjadi salah satu korban dalam peristiwa G30 S/PKI.
+                    </h4>
+                </div>
+                <div class="item">
+                    <h2>Pilih Jawaban Yang Benar</h2>
+                    <button id="x" class="btn x" onclick="salah(1)" value="1">Agus Widodo</button>
+                    <button id="x" class="btn x" onclick="salah(2)" value="2">K. H. Aminudin</button>
+                    <button id="v" class="btn" onclick="betul()">K. H. Agus Salim</button>
+                    <button id="x" class="btn x" onclick="salah(3)" value="3">Abdul Mukminin</button>
+                    
+                </div>
+                <div class="act">
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <audio id="playback" autoplay controls loop>
+        <source src="../audio/bangun-pemuda-pemudi.mp3">
+    </audio>
+</body>
+</html>
