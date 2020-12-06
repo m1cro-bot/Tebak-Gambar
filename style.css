@@ -153,3 +153,13 @@ p, span, button {
     border-radius: 15px;
     border-bottom: solid 6px green;
 }
+
+
+
+
+/*addon*/
+#playback {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}

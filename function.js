@@ -42,3 +42,12 @@ const salah = (f) => {
 const ulang = () => {
     location.reload()
 }
+
+window.onbeforeunload = function(){
+    if (reloaded){
+        return 'Errrrr'
+    }
+    else{
+        return
+    }
+}
